@@ -6,6 +6,7 @@ import { MdMonitor } from 'react-icons/md'
 import { RiGlobalLine } from 'react-icons/ri'
 
 import Logoinstagram from '../../assets/logo-instagram.svg'
+
 import { Flex, Spacer, Typegraphy } from '../../style'
 import * as C from './styles'
 
