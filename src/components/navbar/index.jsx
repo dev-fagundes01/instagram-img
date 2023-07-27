@@ -5,7 +5,8 @@ import { FiSend } from 'react-icons/fi'
 import { MdMonitor } from 'react-icons/md'
 import { RiGlobalLine } from 'react-icons/ri'
 
-import LogoInstagram from '../../assets/logo-instagram.svg'
+import LogoInstagram from '../../assets/Instagram.png'
+import LogoName from '../../assets/unnamed-removebg-preview 1.svg'
 import { Flex, Spacer, Typegraphy } from '../../style'
 import * as C from './styles'
 
@@ -50,7 +51,10 @@ export function NavBar({ themeToggler, theme }) {
         </C.BtnTheme>
       </Flex>
 
-      <img src={LogoInstagram} alt="logo instagram" />
+      <Flex direction="row">
+        <img src={LogoInstagram} alt="logo instagram" />
+        <img src={LogoName} alt="logo name" />
+      </Flex>
 
       <Flex>
         <C.Profile>
