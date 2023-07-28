@@ -6,7 +6,7 @@ import * as C from './style'
 export function Stories({ photos }) {
   const [showAll, setShowAll] = useState(false)
 
-  photos = showAll ? photos : photos?.slice(0, 10)
+  photos = showAll ? photos : photos?.slice(0, 15)
 
   function handLeShowAll() {
     setShowAll(!showAll)

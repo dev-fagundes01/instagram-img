@@ -12,7 +12,7 @@ import { Button, Flex, Screen, Typegraphy } from './style'
 import { darkTheme, LightTheme } from './style/theme'
 
 function App() {
-  const PHOTOS_PER_PAGE = 8
+  const PHOTOS_PER_PAGE = 10
 
   const [theme, setTheme] = useState('dark')
   const [photos, setPhotos] = useState([])

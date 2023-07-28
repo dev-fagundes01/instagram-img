@@ -12,7 +12,7 @@ export const ContainerPublications = styled.div`
   display: flex;
   width: 100%;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 15px;
   height: 500px;
   overflow-y: scroll;
 
@@ -33,7 +33,7 @@ export const ContainerPublications = styled.div`
 
 export const Content = styled.div`
   display: flex;
-  width: 240px;
+  width: 220px;
   gap: 20px;
   flex-direction: column;
 `
