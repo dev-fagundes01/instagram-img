@@ -41,6 +41,7 @@ export const Typegraphy = styled.p`
     font-size: ${props.size || '18px'};
     line-height: ${props.height || '21px'};
     color: ${props.theme.textPrimary};
+    text-transform: capitalize;
   `}
 `
 

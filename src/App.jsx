@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from 'react'
 import ReactLoading from 'react-loading'
 
@@ -19,10 +20,6 @@ function App() {
   const [photosPerPage, setPhotosPerPage] = useState(PHOTOS_PER_PAGE)
   const [isLoading, setIsLoading] = useState()
 
-  const themeToggler = () => {
-    theme === 'light' ? setTheme('dark') : setTheme('light')
-  }
-
   async function fetchPhotos() {
     setIsLoading(true)
     const data = await getPhotos(photosPerPage, reLeaseLoading)
@@ -43,7 +40,7 @@ function App() {
   return (
     <ThemeProvider theme={theme === 'light' ? LightTheme : darkTheme}>
       <Screen>
-        <NavBar themeToggler={themeToggler} theme={theme} />
+        <NavBar setTheme={setTheme} theme={theme} />
 
         <Flex gap="2px">
           <Header />

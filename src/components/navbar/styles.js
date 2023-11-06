@@ -20,6 +20,7 @@ export const BtnTheme = styled.button`
   border: none;
   font-size: 24px;
   color: ${(props) => props.theme.textPrimary};
+  margin-right: -1.5rem;
   position: absolute;
   right: 0;
   top: 0;

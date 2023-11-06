@@ -6,7 +6,7 @@ import { MdMonitor } from 'react-icons/md'
 import { RiGlobalLine } from 'react-icons/ri'
 
 import LogoInstagram from '../../assets/Instagram.png'
-import LogoName from '../../assets/unnamed-removebg-preview 1.svg'
+import LogoName from '../../assets/unnamed-removebg-preview 1.png'
 import { Flex, Spacer, Typegraphy } from '../../style'
 import * as C from './styles'
 
@@ -32,7 +32,10 @@ const InfoNav = [
     navName: 'Ajustes'
   }
 ]
-export function NavBar({ themeToggler, theme }) {
+export function NavBar({ setTheme, theme }) {
+  const themeToggler = () => {
+    theme === 'light' ? setTheme('dark') : setTheme('light')
+  }
   function GroupText({ title, subTitle }) {
     return (
       <Flex>
