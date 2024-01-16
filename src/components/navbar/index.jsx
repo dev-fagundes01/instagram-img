@@ -1,41 +1,42 @@
-import { AiOutlineHome } from 'react-icons/ai'
-import { BiExit, BiMoon } from 'react-icons/bi'
-import { BsSun, BsGear } from 'react-icons/bs'
-import { FiSend } from 'react-icons/fi'
-import { MdMonitor } from 'react-icons/md'
-import { RiGlobalLine } from 'react-icons/ri'
+/* eslint-disable prettier/prettier */
+import { AiOutlineHome } from "react-icons/ai";
+import { BiExit, BiMoon } from "react-icons/bi";
+import { BsSun, BsGear } from "react-icons/bs";
+import { FiSend } from "react-icons/fi";
+import { MdMonitor } from "react-icons/md";
+import { RiGlobalLine } from "react-icons/ri";
 
-import LogoInstagram from '../../assets/Instagram.png'
-import LogoName from '../../assets/unnamed-removebg-preview 1.png'
-import { Flex, Spacer, Typegraphy } from '../../style'
-import * as C from './styles'
+import LogoInstagram from "../../assets/Instagram.png";
+import LogoName from "../../assets/unnamed-removebg-preview 1.png";
+import { Flex, Spacer, Typegraphy } from "../../style";
+import * as C from "./styles";
 
 const InfoNav = [
   {
     icon: <AiOutlineHome />,
-    navName: 'Inicio'
+    navName: "Inicio",
   },
   {
     icon: <RiGlobalLine />,
-    navName: 'Explorar'
+    navName: "Explorar",
   },
   {
     icon: <FiSend />,
-    navName: 'Direct'
+    navName: "Direct",
   },
   {
     icon: <MdMonitor />,
-    navName: 'IGTV'
+    navName: "IGTV",
   },
   {
     icon: <BsGear />,
-    navName: 'Ajustes'
-  }
-]
+    navName: "Ajustes",
+  },
+];
 export function NavBar({ setTheme, theme }) {
   const themeToggler = () => {
-    theme === 'light' ? setTheme('dark') : setTheme('light')
-  }
+    theme === "light" ? setTheme("dark") : setTheme("light");
+  };
   function GroupText({ title, subTitle }) {
     return (
       <Flex>
@@ -44,13 +45,13 @@ export function NavBar({ setTheme, theme }) {
           {subTitle}
         </Typegraphy>
       </Flex>
-    )
+    );
   }
   return (
     <C.Container>
       <Flex>
         <C.BtnTheme onClick={themeToggler}>
-          {theme === 'light' ? <BiMoon /> : <BsSun />}
+          {theme === "light" ? <BiMoon /> : <BsSun />}
         </C.BtnTheme>
       </Flex>
 
@@ -62,7 +63,7 @@ export function NavBar({ setTheme, theme }) {
       <Flex>
         <C.Profile>
           <img
-            src="https://github.com/DiegoSilva1919.png"
+            src="https://github.com/dfagundes2001.png"
             alt="img do perfil do github"
           />
         </C.Profile>
@@ -99,5 +100,5 @@ export function NavBar({ setTheme, theme }) {
         </C.ListIcon>
       </Flex>
     </C.Container>
-  )
+  );
 }
