@@ -1,4 +1,4 @@
-# React + Vite
+# Instagram Fotos
 
 Projeto com Design do Instagram para consumir uma API de fotos.
 
