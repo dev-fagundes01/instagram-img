@@ -1,4 +1,4 @@
-# Instagram Fotos
+# Instagram PEXELS‎
 
 Projeto com Design do Instagram para consumir uma API de fotos.
 
